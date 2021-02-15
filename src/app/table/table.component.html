@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Method</th>
+        <th scope="col">Timestamp</th>
+        <th scope="col">TimeTaken(ms)</th>
+        <th scope="col">Status</th>
+        <th scope="col">URI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let httpTrace of httpTraces">
+        <td>{{httpTrace.method}}</td>
+        <td>{{httpTrace.date}}</td>
+        <td>{{httpTrace.timeTaken}}</td>
+        <td>{{httpTrace.status}}</td>
+        <td>{{httpTrace.uri}}</td>
+      </tr>
+    </tbody>
+</table>
